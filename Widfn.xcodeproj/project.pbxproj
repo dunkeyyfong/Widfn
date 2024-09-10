@@ -11,7 +11,37 @@
 		597CF70B2C909893001200FA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597CF70A2C909893001200FA /* ContentView.swift */; };
 		597CF70D2C909896001200FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 597CF70C2C909896001200FA /* Assets.xcassets */; };
 		597CF7102C909896001200FA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 597CF70F2C909896001200FA /* Preview Assets.xcassets */; };
+		597CF71D2C9098C5001200FA /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 597CF71C2C9098C5001200FA /* WidgetKit.framework */; };
+		597CF71F2C9098C5001200FA /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 597CF71E2C9098C5001200FA /* SwiftUI.framework */; };
+		597CF7222C9098C5001200FA /* WidfnWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597CF7212C9098C5001200FA /* WidfnWidgetBundle.swift */; };
+		597CF7242C9098C5001200FA /* WidfnWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597CF7232C9098C5001200FA /* WidfnWidget.swift */; };
+		597CF7262C9098C8001200FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 597CF7252C9098C8001200FA /* Assets.xcassets */; };
+		597CF72A2C9098C8001200FA /* WidfnWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 597CF71A2C9098C5001200FA /* WidfnWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		597CF7282C9098C8001200FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 597CF6FD2C909893001200FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 597CF7192C9098C5001200FA;
+			remoteInfo = WidfnWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		597CF72E2C9098C8001200FA /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				597CF72A2C9098C8001200FA /* WidfnWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		597CF7052C909893001200FA /* Widfn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Widfn.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,6 +49,13 @@
 		597CF70A2C909893001200FA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		597CF70C2C909896001200FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		597CF70F2C909896001200FA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		597CF71A2C9098C5001200FA /* WidfnWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidfnWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		597CF71C2C9098C5001200FA /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		597CF71E2C9098C5001200FA /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		597CF7212C9098C5001200FA /* WidfnWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidfnWidgetBundle.swift; sourceTree = "<group>"; };
+		597CF7232C9098C5001200FA /* WidfnWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidfnWidget.swift; sourceTree = "<group>"; };
+		597CF7252C9098C8001200FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		597CF7272C9098C8001200FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +66,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		597CF7172C9098C5001200FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				597CF71F2C9098C5001200FA /* SwiftUI.framework in Frameworks */,
+				597CF71D2C9098C5001200FA /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -36,6 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				597CF7072C909893001200FA /* Widfn */,
+				597CF7202C9098C5001200FA /* WidfnWidget */,
+				597CF71B2C9098C5001200FA /* Frameworks */,
 				597CF7062C909893001200FA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				597CF7052C909893001200FA /* Widfn.app */,
+				597CF71A2C9098C5001200FA /* WidfnWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +116,26 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		597CF71B2C9098C5001200FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				597CF71C2C9098C5001200FA /* WidgetKit.framework */,
+				597CF71E2C9098C5001200FA /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		597CF7202C9098C5001200FA /* WidfnWidget */ = {
+			isa = PBXGroup;
+			children = (
+				597CF7212C9098C5001200FA /* WidfnWidgetBundle.swift */,
+				597CF7232C9098C5001200FA /* WidfnWidget.swift */,
+				597CF7252C9098C8001200FA /* Assets.xcassets */,
+				597CF7272C9098C8001200FA /* Info.plist */,
+			);
+			path = WidfnWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +146,34 @@
 				597CF7012C909893001200FA /* Sources */,
 				597CF7022C909893001200FA /* Frameworks */,
 				597CF7032C909893001200FA /* Resources */,
+				597CF72E2C9098C8001200FA /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				597CF7292C9098C8001200FA /* PBXTargetDependency */,
 			);
 			name = Widfn;
 			productName = Widfn;
 			productReference = 597CF7052C909893001200FA /* Widfn.app */;
 			productType = "com.apple.product-type.application";
+		};
+		597CF7192C9098C5001200FA /* WidfnWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 597CF72B2C9098C8001200FA /* Build configuration list for PBXNativeTarget "WidfnWidgetExtension" */;
+			buildPhases = (
+				597CF7162C9098C5001200FA /* Sources */,
+				597CF7172C9098C5001200FA /* Frameworks */,
+				597CF7182C9098C5001200FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WidfnWidgetExtension;
+			productName = WidfnWidgetExtension;
+			productReference = 597CF71A2C9098C5001200FA /* WidfnWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +186,9 @@
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					597CF7042C909893001200FA = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					597CF7192C9098C5001200FA = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
@@ -116,6 +207,7 @@
 			projectRoot = "";
 			targets = (
 				597CF7042C909893001200FA /* Widfn */,
+				597CF7192C9098C5001200FA /* WidfnWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +219,14 @@
 			files = (
 				597CF7102C909896001200FA /* Preview Assets.xcassets in Resources */,
 				597CF70D2C909896001200FA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		597CF7182C9098C5001200FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				597CF7262C9098C8001200FA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +242,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		597CF7162C9098C5001200FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				597CF7242C9098C5001200FA /* WidfnWidget.swift in Sources */,
+				597CF7222C9098C5001200FA /* WidfnWidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		597CF7292C9098C8001200FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 597CF7192C9098C5001200FA /* WidfnWidgetExtension */;
+			targetProxy = 597CF7282C9098C8001200FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		597CF7112C909896001200FA /* Debug */ = {
@@ -262,6 +379,7 @@
 		597CF7142C909896001200FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -275,6 +393,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -291,6 +410,7 @@
 		597CF7152C909896001200FA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +424,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,6 +432,60 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dunkeyyfong.Widfn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		597CF72C2C9098C8001200FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 56J3FHBFA2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WidfnWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WidfnWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dunkeyyfong.Widfn.WidfnWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		597CF72D2C9098C8001200FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 56J3FHBFA2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WidfnWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WidfnWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dunkeyyfong.Widfn.WidfnWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -334,6 +509,15 @@
 			buildConfigurations = (
 				597CF7142C909896001200FA /* Debug */,
 				597CF7152C909896001200FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		597CF72B2C9098C8001200FA /* Build configuration list for PBXNativeTarget "WidfnWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				597CF72C2C9098C8001200FA /* Debug */,
+				597CF72D2C9098C8001200FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

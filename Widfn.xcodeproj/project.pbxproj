@@ -14,9 +14,10 @@
 		597CF71D2C9098C5001200FA /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 597CF71C2C9098C5001200FA /* WidgetKit.framework */; };
 		597CF71F2C9098C5001200FA /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 597CF71E2C9098C5001200FA /* SwiftUI.framework */; };
 		597CF7222C9098C5001200FA /* WidfnWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597CF7212C9098C5001200FA /* WidfnWidgetBundle.swift */; };
-		597CF7242C9098C5001200FA /* WidfnWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597CF7232C9098C5001200FA /* WidfnWidget.swift */; };
 		597CF7262C9098C8001200FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 597CF7252C9098C8001200FA /* Assets.xcassets */; };
 		597CF72A2C9098C8001200FA /* WidfnWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 597CF71A2C9098C5001200FA /* WidfnWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		597CF7332C90AD6D001200FA /* WidfnWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597CF7232C9098C5001200FA /* WidfnWidget.swift */; };
+		597CF7362C90B04B001200FA /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597CF7352C90B04B001200FA /* CalendarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		597CF7232C9098C5001200FA /* WidfnWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidfnWidget.swift; sourceTree = "<group>"; };
 		597CF7252C9098C8001200FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		597CF7272C9098C8001200FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		597CF7352C90B04B001200FA /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,10 +130,11 @@
 		597CF7202C9098C5001200FA /* WidfnWidget */ = {
 			isa = PBXGroup;
 			children = (
-				597CF7212C9098C5001200FA /* WidfnWidgetBundle.swift */,
 				597CF7232C9098C5001200FA /* WidfnWidget.swift */,
+				597CF7212C9098C5001200FA /* WidfnWidgetBundle.swift */,
 				597CF7252C9098C8001200FA /* Assets.xcassets */,
 				597CF7272C9098C8001200FA /* Info.plist */,
+				597CF7352C90B04B001200FA /* CalendarView.swift */,
 			);
 			path = WidfnWidget;
 			sourceTree = "<group>";
@@ -246,8 +249,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				597CF7242C9098C5001200FA /* WidfnWidget.swift in Sources */,
+				597CF7332C90AD6D001200FA /* WidfnWidget.swift in Sources */,
 				597CF7222C9098C5001200FA /* WidfnWidgetBundle.swift in Sources */,
+				597CF7362C90B04B001200FA /* CalendarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,7 +397,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -424,7 +428,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
